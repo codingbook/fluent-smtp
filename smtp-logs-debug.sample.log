@@ -1,0 +1,169 @@
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Smtp\\Handler::setSettings",
+    "data": {
+        "params": {
+            "settings_keys": [
+                "provider",
+                "sender_name",
+                "sender_email",
+                "force_from_name",
+                "force_from_email",
+                "return_path",
+                "host",
+                "port",
+                "auth",
+                "username",
+                "password",
+                "auto_tls",
+                "encryption",
+                "key_store"
+            ]
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "DEBUG",
+    "message": "PHPMailer Settings",
+    "data": {
+        "provider": "smtp",
+        "sender_name": "Ibrahim",
+        "sender_email": "shuvoaftab@gmail.com",
+        "force_from_name": "no",
+        "force_from_email": "yes",
+        "return_path": "yes",
+        "host": "smtp.ibrahim.com",
+        "port": "465",
+        "auth": "yes",
+        "username": "ibrahimsharif",
+        "password": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+        "auto_tls": "yes",
+        "encryption": "ssl",
+        "key_store": "db"
+    }
+}
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "DEBUG",
+    "message": "EXIT: FluentMail\\App\\Services\\Mailer\\Providers\\Smtp\\Handler::setSettings (Execution time: 0.0004s)",
+    "data": {
+        "return_value": null
+    }
+}
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Smtp\\Handler::send",
+    "data": {
+        "params": []
+    }
+}
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Smtp\\Handler::postSend",
+    "data": {
+        "params": []
+    }
+}
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "INFO",
+    "message": "EMAIL OPERATION: set_smtp_mode",
+    "data": {
+        "mode": "SMTP"
+    }
+}
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "INFO",
+    "message": "SMTP CONNECTION",
+    "data": {
+        "host": "smtp.ibrahim.com",
+        "port": "465",
+        "encryption": "ssl",
+        "auth_required": true
+    }
+}
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "INFO",
+    "message": "SMTP AUTHENTICATION",
+    "data": {
+        "username": "ibrahimsharif",
+        "auth_attempt": true
+    }
+}
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "INFO",
+    "message": "EMAIL OPERATION: sender_setup",
+    "data": {
+        "original_from": "shuvoaftab@gmail.com",
+        "from_name": "Ibrahim"
+    }
+}
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "INFO",
+    "message": "EMAIL SEND ATTEMPT",
+    "data": {
+        "from": {
+            "email": "shuvoaftab@gmail.com",
+            "name": "Ibrahim"
+        },
+        "to": [
+            {
+                "email": "cocholmesthree@gmail.com",
+                "type": "to"
+            }
+        ],
+        "subject": "Fluent SMTP: Test Email - WP Plugins - HTML Version",
+        "headers": {
+            "reply-to": [],
+            "cc": [],
+            "bcc": [],
+            "content-type": "text\/html"
+        },
+        "body": "<!doctype html>\n<html lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width\">\n    <title>FluentSMTP Test Email<\/title>\n    <style type=\"text\/css\">@media only screen and (max-width: 599px) {table.body .container {width: 95% !important;}.header {padding: 15px 15px 12px 15px !important;}.header img {width: 200px !important;height: auto !important;}.content, .aside {padding: 30px 40px 20px 40px !important;}}<\/style>\n<\/head>\n<body style=\"height: 100% !important; width: 100% !important; min-width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; padding: 0; margin: 0; Margin: 0; font-size: 14px; mso-line-height-rule: exactly; line-height: 140%; background-color: #f1f1f1; text-align: center;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" height=\"100%\" class=\"body\" style=\"border-collapse: collapse; border-spacing: 0; vertical-align: top; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; height: 100% !important; width: 100% !important; min-width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; background-color: #f1f1f1; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; padding: 0; margin: 0; Margin: 0; text-align: left; font-size: 14px; mso-line-height-rule: exactly; line-height: 140%;\">\n    <tr style=\"padding: 0; vertical-align: top; text-align: left;\">\n        <td align=\"center\" valign=\"top\" class=\"body-inner fluent-smtp\" style=\"word-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; padding: 0; margin: 0; Margin: 0; font-size: 14px; mso-line-height-rule: exactly; line-height: 140%; text-align: center;\">\n            <!-- Container -->\n            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"container\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; vertical-align: top; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 600px; margin: 0 auto 30px auto; Margin: 0 auto 30px auto; text-align: inherit;\">\n                <!-- Header -->\n                <tr style=\"padding: 0; vertical-align: top; text-align: left;\">\n                    <td align=\"center\" valign=\"middle\" class=\"header\" style=\"word-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; margin: 0; Margin: 0; font-size: 14px; mso-line-height-rule: exactly; line-height: 140%; text-align: center; padding: 30px 30px 22px 30px;\">\n                        <img src=\"https:\/\/wordpressplugins.info\/wp-content\/plugins\/fluent-smtp\/assets\/images\/fluentsmtp.png\" width=\"164px\" alt=\"Fluent SMTP Logo\" style=\"outline: none; text-decoration: none; max-width: 100%; clear: both; -ms-interpolation-mode: bicubic; display: inline-block !important; width: 164px;\">\n                    <\/td>\n                <\/tr>\n                <!-- Content -->\n                <tr style=\"padding: 0; vertical-align: top; text-align: left;\">\n                    <td align=\"left\" valign=\"top\" class=\"content\" style=\"word-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; margin: 0; Margin: 0; text-align: left; font-size: 14px; mso-line-height-rule: exactly; line-height: 140%; background-color: #ffffff; padding: 60px 75px 45px 75px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; border-top: 4px solid #c716c1;\">\n                        <div class=\"success\" style=\"text-align: center;\">\n                            <p class=\"text-extra-large text-center congrats\" style=\"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; padding: 0; mso-line-height-rule: exactly; line-height: 140%; font-size: 20px; text-align: center; margin: 0 0 20px 0; Margin: 0 0 20px 0;\">\n                                Congrats, test email was sent successfully!                            <\/p>\n                            <p class=\"text-large\" style=\"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; padding: 0; text-align: left; mso-line-height-rule: exactly; line-height: 140%; margin: 0 0 15px 0; Margin: 0 0 15px 0; font-size: 16px;\">\n                                Thank you for using Fluent SMTP Plugin. The ultimate SMTP plugin you need for making sure your emails are delivered.<br \/><br \/>FluentSMTP is a free opensource plugin and it will be always free (<a href=\"https:\/\/fluentsmtp.com\/why-we-built-fluentsmtp-plugin\/\">Learn why it&#039;s free<\/a>).\n                            <\/p>\n\n                            <p class=\"signature\" style=\"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; padding: 0; font-size: 14px; mso-line-height-rule: exactly; line-height: 140%; text-align: left; margin: 20px 0 0 0; Margin: 20px 0 0 0;\">\n                                <img src=\"https:\/\/wordpressplugins.info\/wp-content\/plugins\/fluent-smtp\/assets\/images\/mail_signature.png\" width=\"250\" alt=\"Fluent SMTP Logo\" style=\"outline: none; text-decoration: none; max-width: 100%; clear: both; -ms-interpolation-mode: bicubic; display: inline-block !important; width: 150px;\">\n                            <\/p>\n                            <p style=\"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; padding: 0; text-align: left; font-size: 14px; mso-line-height-rule: exactly; line-height: 140%; margin: 0 0 15px 0; Margin: 0 0 15px 0;\">\n                                Shahjahan Jewel<br>\n                                CEO, WPManageNinja LLC\n                            <\/p>\n\n                            <p style=\"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; padding: 0; text-align: left; font-size: 14px; mso-line-height-rule: exactly; line-height: 140%; margin: 20px 0 15px 0; Margin: 20px 0 15px 0;\">\n                                This email was sent from <b>WP Plugins at 2025-10-18 12:45:38<\/b>\n                            <\/p>\n                        <\/div>\n                    <\/td>\n                <\/tr>\n            <\/table>\n        <\/td>\n    <\/tr>\n    <tr>\n        <td>\n            <p style=\"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #444; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; padding: 0; text-align: center; font-size: 14px; mso-line-height-rule: exactly; line-height: 140%; margin: 0 0 15px 0; margin: 0 0 15px 0;\">\n                PS: if you have a minute please <a href=\"https:\/\/wordpress.org\/support\/plugin\/fluent-smtp\/reviews\/?filter=5\">write a review for FluentSMTP<\/a>\n            <\/p>\n        <\/td>\n    <\/tr>\n<\/table>\n<\/body>\n<\/html>\n",
+        "alt_body": null
+    }
+}
+{
+    "timestamp": "2025-10-18 12:45:38",
+    "level": "INFO",
+    "message": "EMAIL OPERATION: email_details",
+    "data": {
+        "content_type": "text\/html",
+        "has_attachments": false,
+        "attachment_count": 0,
+        "attachments": [],
+        "body_encoding": "8bit"
+    }
+}
+{
+    "timestamp": "2025-10-18 12:46:53",
+    "level": "DEBUG",
+    "message": "SMTP DEBUG: SMTP ERROR: Failed to connect to server: Operation timed out (60)",
+    "data": []
+}
+{
+    "timestamp": "2025-10-18 12:46:53",
+    "level": "DEBUG",
+    "message": "SMTP DEBUG: SMTP Error: Could not connect to SMTP host. Failed to connect to server",
+    "data": []
+}
+{
+    "timestamp": "2025-10-18 12:46:53",
+    "level": "ERROR",
+    "message": "ERROR in FluentMail\\App\\Services\\Mailer\\Providers\\Smtp\\Handler::postSend: SMTP Error: Could not connect to SMTP host. Failed to connect to server",
+    "data": {
+        "exception": {},
+        "smtp_debug_output": [
+            "SMTP ERROR: Failed to connect to server: Operation timed out (60)",
+            "SMTP Error: Could not connect to SMTP host. Failed to connect to server"
+        ]
+    }
+}

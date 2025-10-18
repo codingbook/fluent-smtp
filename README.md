@@ -63,9 +63,13 @@ All the email connection drivers can be found in `app/Services/Mailer/Providers`
 
 - Clone this project.
 - Open the project in the terminal.
-- Run `npm install`.
+- Run `pnpm install --save-dev webpack webpack-cli`
+- Run `pnpm install`.
+- Run `pnpm start` for development OR
 - Run `npx mix watch` for development.
+- Run `pnpm prod` for production build.
 - Run `npx mix --production` to build the project.
 
 All VueJS code can be found in `resources/admin`.
 
+> Finally, copy and zip only necessary files into `fluent-smtp` folder and enjoy sharing.

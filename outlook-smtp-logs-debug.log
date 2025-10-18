@@ -1,0 +1,488 @@
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::setSettings",
+    "data": {
+        "params": {
+            "settings": {
+                "provider": "outlook",
+                "sender_name": "ibrahimsharif",
+                "sender_email": "shuvoaftab@gmail.com",
+                "force_from_name": "no",
+                "return_path": "yes",
+                "key_store": "db",
+                "client_id": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+                "client_secret": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+                "auth_token": "",
+                "access_token": null,
+                "refresh_token": null,
+                "expire_stamp": 1760789928
+            }
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "EXIT: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::setSettings (Execution time: 0.0006s)",
+    "data": {
+        "return_value": {}
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::send",
+    "data": {
+        "params": []
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "INFO",
+    "message": "EMAIL OPERATION: set_encoding",
+    "data": {
+        "encoding": "base64"
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "INFO",
+    "message": "EMAIL OPERATION: pre_send_checks",
+    "data": {
+        "preSend_result": true,
+        "phpMailer_preSend_result": true
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::postSend",
+    "data": {
+        "params": []
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::sendViaApi",
+    "data": {
+        "params": []
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "INFO",
+    "message": "EMAIL OPERATION: mime_preparation",
+    "data": {
+        "original_size": 11853,
+        "encoded_size": 16012
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "INFO",
+    "message": "EMAIL OPERATION: get_settings",
+    "data": {
+        "settings_keys": [
+            "provider",
+            "sender_name",
+            "sender_email",
+            "force_from_name",
+            "return_path",
+            "key_store",
+            "client_id",
+            "client_secret",
+            "auth_token",
+            "access_token",
+            "refresh_token",
+            "expire_stamp"
+        ]
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::getAccessToken",
+    "data": {
+        "params": {
+            "config": {
+                "provider": "outlook",
+                "sender_name": "ibrahimsharif",
+                "sender_email": "shuvoaftab@gmail.com",
+                "force_from_name": "no",
+                "return_path": "yes",
+                "key_store": "db",
+                "client_id": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+                "client_secret": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+                "auth_token": "",
+                "access_token": null,
+                "refresh_token": null,
+                "expire_stamp": 1760789928
+            }
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "INFO",
+    "message": "TOKEN OPERATION: checking_token_expiry",
+    "data": {
+        "current_time": 1760790252,
+        "expire_stamp": 1760789928,
+        "buffer_time": 300,
+        "will_expire_soon": true
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "INFO",
+    "message": "TOKEN OPERATION: token_refresh_needed",
+    "data": {
+        "reason": "token_expired_or_expiring_soon"
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::__construct",
+    "data": {
+        "params": {
+            "clientId": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+            "clientSecret": "E7L5 rZ12 NonL gwbk YWeE 10ZX"
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::sendTokenRequest",
+    "data": {
+        "params": {
+            "type": "refresh_token",
+            "params": {
+                "refresh_token": null
+            }
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::getConfig",
+    "data": {
+        "params": []
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::getRedirectUrl",
+    "data": {
+        "params": []
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "EXIT: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::getRedirectUrl (Execution time: 0.0001s)",
+    "data": {
+        "return_value": "https:\/\/wordpressplugins.info\/wp-json\/fluent-smtp\/outlook_callback"
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "DEBUG",
+    "message": "EXIT: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::getConfig (Execution time: 0.0002s)",
+    "data": {
+        "return_value": {
+            "clientId": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+            "clientSecret": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+            "redirectUri": "https:\/\/wordpressplugins.info\/wp-json\/fluent-smtp\/outlook_callback",
+            "urlAuthorize": "https:\/\/login.microsoftonline.com\/common\/oauth2\/v2.0\/authorize",
+            "urlAccessToken": "https:\/\/login.microsoftonline.com\/common\/oauth2\/v2.0\/token",
+            "urlResourceOwnerDetails": "",
+            "scopes": "https:\/\/graph.microsoft.com\/user.read https:\/\/graph.microsoft.com\/mail.readwrite https:\/\/graph.microsoft.com\/mail.send https:\/\/graph.microsoft.com\/mail.send.shared offline_access"
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:12",
+    "level": "INFO",
+    "message": "TOKEN OPERATION: send_token_request",
+    "data": {
+        "type": "refresh_token",
+        "config": {
+            "clientId": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+            "clientSecret": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+            "redirectUri": "https:\/\/wordpressplugins.info\/wp-json\/fluent-smtp\/outlook_callback",
+            "urlAuthorize": "https:\/\/login.microsoftonline.com\/common\/oauth2\/v2.0\/authorize",
+            "urlAccessToken": "https:\/\/login.microsoftonline.com\/common\/oauth2\/v2.0\/token",
+            "urlResourceOwnerDetails": "",
+            "scopes": "https:\/\/graph.microsoft.com\/user.read https:\/\/graph.microsoft.com\/mail.readwrite https:\/\/graph.microsoft.com\/mail.send https:\/\/graph.microsoft.com\/mail.send.shared offline_access"
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "INFO",
+    "message": "TOKEN OPERATION: token_request_success",
+    "data": {
+        "type": "refresh_token",
+        "tokens_received": [
+            "error",
+            "error_description",
+            "error_codes",
+            "timestamp",
+            "trace_id",
+            "correlation_id",
+            "error_uri"
+        ]
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "DEBUG",
+    "message": "EXIT: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::sendTokenRequest (Execution time: 0.5607s)",
+    "data": {
+        "return_value": {
+            "error": "invalid_request",
+            "error_description": "AADSTS900144: The request body must contain the following parameter: 'refresh_token'. Trace ID: bd6a02d6-1939-4328-8b2c-26af9e722500 Correlation ID: ac36ccec-1583-4721-a7ef-eeb7a9c2f639 Timestamp: 2025-10-18 12:24:13Z",
+            "error_codes": [
+                900144
+            ],
+            "timestamp": "2025-10-18 12:24:13Z",
+            "trace_id": "bd6a02d6-1939-4328-8b2c-26af9e722500",
+            "correlation_id": "ac36ccec-1583-4721-a7ef-eeb7a9c2f639",
+            "error_uri": "https:\/\/login.microsoftonline.com\/error?code=900144"
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "INFO",
+    "message": "TOKEN OPERATION: token_refresh_success",
+    "data": {
+        "new_tokens": [
+            "error",
+            "error_description",
+            "error_codes",
+            "timestamp",
+            "trace_id",
+            "correlation_id",
+            "error_uri"
+        ]
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::saveNewTokens",
+    "data": {
+        "params": {
+            "existing_data": {
+                "provider": "outlook",
+                "sender_name": "ibrahimsharif",
+                "sender_email": "shuvoaftab@gmail.com",
+                "force_from_name": "no",
+                "return_path": "yes",
+                "key_store": "db",
+                "client_id": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+                "client_secret": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+                "auth_token": "",
+                "access_token": null,
+                "refresh_token": null,
+                "expire_stamp": 1760789928
+            },
+            "tokens": {
+                "error": "invalid_request",
+                "error_description": "AADSTS900144: The request body must contain the following parameter: 'refresh_token'. Trace ID: bd6a02d6-1939-4328-8b2c-26af9e722500 Correlation ID: ac36ccec-1583-4721-a7ef-eeb7a9c2f639 Timestamp: 2025-10-18 12:24:13Z",
+                "error_codes": [
+                    900144
+                ],
+                "timestamp": "2025-10-18 12:24:13Z",
+                "trace_id": "bd6a02d6-1939-4328-8b2c-26af9e722500",
+                "correlation_id": "ac36ccec-1583-4721-a7ef-eeb7a9c2f639",
+                "error_uri": "https:\/\/login.microsoftonline.com\/error?code=900144"
+            }
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "ERROR",
+    "message": "ERROR in FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::saveNewTokens: Invalid tokens provided",
+    "data": {
+        "has_access_token": false,
+        "has_refresh_token": false
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "DEBUG",
+    "message": "EXIT: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::getAccessToken (Execution time: 0.5627s)",
+    "data": {
+        "return_value": null
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "INFO",
+    "message": "TOKEN OPERATION: get_access_token",
+    "data": {
+        "token_length": 0,
+        "token_valid": false
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::__construct",
+    "data": {
+        "params": {
+            "clientId": "E7L5 rZ12 NonL gwbk YWeE 10ZX",
+            "clientSecret": "E7L5 rZ12 NonL gwbk YWeE 10ZX"
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "INFO",
+    "message": "EMAIL OPERATION: api_instance_created",
+    "data": {
+        "client_id": "E7L5 rZ12 NonL gwbk YWeE 10ZX"
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "DEBUG",
+    "message": "ENTRY: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::sendMime",
+    "data": {
+        "params": {
+            "mime_length": 16012,
+            "accessToken": null
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "INFO",
+    "message": "API REQUEST: POST https:\/\/graph.microsoft.com\/v1.0\/me\/sendMail",
+    "data": {
+        "headers": {
+            "Authorization": "[REDACTED]",
+            "Content-Type": "text\/plain"
+        },
+        "body": "RGF0ZTogU2F0LCAxOCBPY3QgMjAyNSAxMjoyNDoxMiArMDAwMA0KRnJvbTogaWJyYWhpbXNoYXJp\nZiA8c2h1dm9hZnRhYkBnbWFpbC5jb20+DQpNZXNzYWdlLUlEOiA8N043TDZZdUpLR1JrdkdkZDBo\nMXY5SnljVFZYekc5Zms2dzQ0U2hrTThAd29yZHByZXNzcGx1Z2lucy5pbmZvPg0KWC1NYWlsZXI6\nIFBIUE1haWxlciA2LjkuMyAoaHR0cHM6Ly9naXRodWIuY29tL1BIUE1haWxlci9QSFBNYWlsZXIp\nDQpNSU1FLVZlcnNpb246IDEuMA0KQ29udGVudC1UeXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRG\nLTgNCkNvbnRlbnQtVHJhbnNmZXItRW5jb2Rpbmc6IGJhc2U2NA0KVG86IGNvY2hvbG1lc3RocmVl\nQGdtYWlsLmNvbQ0KU3ViamVjdDogPT91cy1hc2NpaT9RP0ZsdWVudF9TTVRQOl9UZXN0X0VtYWls\nXy1fV1BfUGx1Z2luc18tX0hUTUxfVmVyPz0NCiA9P3VzLWFzY2lpP1E\/c2lvbj89DQoNClBDRmti\nMk4wZVhCbElHaDBiV3crQ2p4b2RHMXNJR3hoYm1jOUltVnVJajRLUEdobFlXUStDaUFnSUNBOGJX\nVjBZU0JvZEhSd0xXVngNCmRXbDJQU0pEYjI1MFpXNTBMVlI1Y0dVaUlHTnZiblJsYm5ROUluUmxl\nSFF2YUhSdGJEc2dZMmhoY25ObGREMVZWRVl0T0NJK0NpQWcNCklDQThiV1YwWVNCb2RIUndMV1Z4\nZFdsMlBTSllMVlZCTFVOdmJYQmhkR2xpYkdVaUlHTnZiblJsYm5ROUlrbEZQV1ZrWjJVaVBnb2cN\nCklDQWdQRzFsZEdFZ2JtRnRaVDBpZG1sbGQzQnZjblFpSUdOdmJuUmxiblE5SW5kcFpIUm9QV1Js\nZG1salpTMTNhV1IwYUNJK0NpQWcNCklDQThkR2wwYkdVK1JteDFaVzUwVTAxVVVDQlVaWE4wSUVW\ndFlXbHNQQzkwYVhSc1pUNEtJQ0FnSUR4emRIbHNaU0IwZVhCbFBTSjANClpYaDBMMk56Y3lJK1FH\nMWxaR2xoSUc5dWJIa2djMk55WldWdUlHRnVaQ0FvYldGNExYZHBaSFJvT2lBMU9UbHdlQ2tnZTNS\naFlteGwNCkxtSnZaSGtnTG1OdmJuUmhhVzVsY2lCN2QybGtkR2c2SURrMUpTQWhhVzF3YjNKMFlX\nNTBPMzB1YUdWaFpHVnlJSHR3WVdSa2FXNW4NCk9pQXhOWEI0SURFMWNIZ2dNVEp3ZUNBeE5YQjRJ\nQ0ZwYlhCdmNuUmhiblE3ZlM1b1pXRmtaWElnYVcxbklIdDNhV1IwYURvZ01qQXcNCmNIZ2dJV2x0\nY0c5eWRHRnVkRHRvWldsbmFIUTZJR0YxZEc4Z0lXbHRjRzl5ZEdGdWREdDlMbU52Ym5SbGJuUXNJ\nQzVoYzJsa1pTQjcNCmNHRmtaR2x1WnpvZ016QndlQ0EwTUhCNElESXdjSGdnTkRCd2VDQWhhVzF3\nYjNKMFlXNTBPMzE5UEM5emRIbHNaVDRLUEM5b1pXRmsNClBnbzhZbTlrZVNCemRIbHNaVDBpYUdW\ncFoyaDBPaUF4TURBbElDRnBiWEJ2Y25SaGJuUTdJSGRwWkhSb09pQXhNREFsSUNGcGJYQnYNCmNu\nUmhiblE3SUcxcGJpMTNhV1IwYURvZ01UQXdKVHNnTFcxdmVpMWliM2d0YzJsNmFXNW5PaUJpYjNK\na1pYSXRZbTk0T3lBdGQyVmkNCmEybDBMV0p2ZUMxemFYcHBibWM2SUdKdmNtUmxjaTFpYjNnN0lH\nSnZlQzF6YVhwcGJtYzZJR0p2Y21SbGNpMWliM2c3SUMxM1pXSnINCmFYUXRabTl1ZEMxemJXOXZk\nR2hwYm1jNklHRnVkR2xoYkdsaGMyVmtJQ0ZwYlhCdmNuUmhiblE3SUMxdGIzb3RiM040TFdadmJu\nUXQNCmMyMXZiM1JvYVc1bk9pQm5jbUY1YzJOaGJHVWdJV2x0Y0c5eWRHRnVkRHNnTFcxekxYUmxl\nSFF0YzJsNlpTMWhaR3AxYzNRNklERXcNCk1DVTdJQzEzWldKcmFYUXRkR1Y0ZEMxemFYcGxMV0Zr\nYW5WemREb2dNVEF3SlRzZ1kyOXNiM0k2SUNNME5EUTdJR1p2Ym5RdFptRnQNCmFXeDVPaUFuU0dW\nc2RtVjBhV05oSUU1bGRXVW5MRWhsYkhabGRHbGpZU3hCY21saGJDeHpZVzV6TFhObGNtbG1PeUJt\nYjI1MExYZGwNCmFXZG9kRG9nYm05eWJXRnNPeUJ3WVdSa2FXNW5PaUF3T3lCdFlYSm5hVzQ2SURB\nN0lFMWhjbWRwYmpvZ01Ec2dabTl1ZEMxemFYcGwNCk9pQXhOSEI0T3lCdGMyOHRiR2x1WlMxb1pX\nbG5hSFF0Y25Wc1pUb2daWGhoWTNSc2VUc2diR2x1WlMxb1pXbG5hSFE2SURFME1DVTcNCklHSmhZ\nMnRuY205MWJtUXRZMjlzYjNJNklDTm1NV1l4WmpFN0lIUmxlSFF0WVd4cFoyNDZJR05sYm5SbGNq\nc2lQZ284ZEdGaWJHVWcNClltOXlaR1Z5UFNJd0lpQmpaV3hzY0dGa1pHbHVaejBpTUNJZ1kyVnNi\nSE53WVdOcGJtYzlJakFpSUhkcFpIUm9QU0l4TURBbElpQm8NClpXbG5hSFE5SWpFd01DVWlJR05z\nWVhOelBTSmliMlI1SWlCemRIbHNaVDBpWW05eVpHVnlMV052Ykd4aGNITmxPaUJqYjJ4c1lYQnoN\nClpUc2dZbTl5WkdWeUxYTndZV05wYm1jNklEQTdJSFpsY25ScFkyRnNMV0ZzYVdkdU9pQjBiM0E3\nSUcxemJ5MTBZV0pzWlMxc2MzQmgNClkyVTZJREJ3ZERzZ2JYTnZMWFJoWW14bExYSnpjR0ZqWlRv\nZ01IQjBPeUF0YlhNdGRHVjRkQzF6YVhwbExXRmthblZ6ZERvZ01UQXcNCkpUc2dMWGRsWW10cGRD\nMTBaWGgwTFhOcGVtVXRZV1JxZFhOME9pQXhNREFsT3lCb1pXbG5hSFE2SURFd01DVWdJV2x0Y0c5\neWRHRnUNCmREc2dkMmxrZEdnNklERXdNQ1VnSVdsdGNHOXlkR0Z1ZERzZ2JXbHVMWGRwWkhSb09p\nQXhNREFsT3lBdGJXOTZMV0p2ZUMxemFYcHANCmJtYzZJR0p2Y21SbGNpMWliM2c3SUMxM1pXSnJh\nWFF0WW05NExYTnBlbWx1WnpvZ1ltOXlaR1Z5TFdKdmVEc2dZbTk0TFhOcGVtbHUNClp6b2dZbTl5\nWkdWeUxXSnZlRHNnTFhkbFltdHBkQzFtYjI1MExYTnRiMjkwYUdsdVp6b2dZVzUwYVdGc2FXRnpa\nV1FnSVdsdGNHOXkNCmRHRnVkRHNnTFcxdmVpMXZjM2d0Wm05dWRDMXpiVzl2ZEdocGJtYzZJR2R5\nWVhselkyRnNaU0FoYVcxd2IzSjBZVzUwT3lCaVlXTnINClozSnZkVzVrTFdOdmJHOXlPaUFqWmpG\nbU1XWXhPeUJqYjJ4dmNqb2dJelEwTkRzZ1ptOXVkQzFtWVcxcGJIazZJQ2RJWld4MlpYUnANClky\nRWdUbVYxWlNjc1NHVnNkbVYwYVdOaExFRnlhV0ZzTEhOaGJuTXRjMlZ5YVdZN0lHWnZiblF0ZDJW\ncFoyaDBPaUJ1YjNKdFlXdzcNCklIQmhaR1JwYm1jNklEQTdJRzFoY21kcGJqb2dNRHNnVFdGeVoy\nbHVPaUF3T3lCMFpYaDBMV0ZzYVdkdU9pQnNaV1owT3lCbWIyNTANCkxYTnBlbVU2SURFMGNIZzdJ\nRzF6Ynkxc2FXNWxMV2hsYVdkb2RDMXlkV3hsT2lCbGVHRmpkR3g1T3lCc2FXNWxMV2hsYVdkb2RE\nb2cNCk1UUXdKVHNpUGdvZ0lDQWdQSFJ5SUhOMGVXeGxQU0p3WVdSa2FXNW5PaUF3T3lCMlpYSjBh\nV05oYkMxaGJHbG5iam9nZEc5d095QjANClpYaDBMV0ZzYVdkdU9pQnNaV1owT3lJK0NpQWdJQ0Fn\nSUNBZ1BIUmtJR0ZzYVdkdVBTSmpaVzUwWlhJaUlIWmhiR2xuYmowaWRHOXcNCklpQmpiR0Z6Y3ow\naVltOWtlUzFwYm01bGNpQm1iSFZsYm5RdGMyMTBjQ0lnYzNSNWJHVTlJbmR2Y21RdGQzSmhjRG9n\nWW5KbFlXc3QNCmQyOXlaRHNnTFhkbFltdHBkQzFvZVhCb1pXNXpPaUJoZFhSdk95QXRiVzk2TFdo\nNWNHaGxibk02SUdGMWRHODdJR2g1Y0dobGJuTTYNCklHRjFkRzg3SUdKdmNtUmxjaTFqYjJ4c1lY\nQnpaVG9nWTI5c2JHRndjMlVnSVdsdGNHOXlkR0Z1ZERzZ2RtVnlkR2xqWVd3dFlXeHANCloyNDZJ\nSFJ2Y0RzZ2JYTnZMWFJoWW14bExXeHpjR0ZqWlRvZ01IQjBPeUJ0YzI4dGRHRmliR1V0Y25Od1lX\nTmxPaUF3Y0hRN0lDMXQNCmN5MTBaWGgwTFhOcGVtVXRZV1JxZFhOME9pQXhNREFsT3lBdGQyVmlh\nMmwwTFhSbGVIUXRjMmw2WlMxaFpHcDFjM1E2SURFd01DVTcNCklHTnZiRzl5T2lBak5EUTBPeUJt\nYjI1MExXWmhiV2xzZVRvZ0owaGxiSFpsZEdsallTQk9aWFZsSnl4SVpXeDJaWFJwWTJFc1FYSnAN\nCllXd3NjMkZ1Y3kxelpYSnBaanNnWm05dWRDMTNaV2xuYUhRNklHNXZjbTFoYkRzZ2NHRmtaR2x1\nWnpvZ01Ec2diV0Z5WjJsdU9pQXcNCk95Qk5ZWEpuYVc0NklEQTdJR1p2Ym5RdGMybDZaVG9nTVRS\nd2VEc2diWE52TFd4cGJtVXRhR1ZwWjJoMExYSjFiR1U2SUdWNFlXTjANCmJIazdJR3hwYm1VdGFH\nVnBaMmgwT2lBeE5EQWxPeUIwWlhoMExXRnNhV2R1T2lCalpXNTBaWEk3SWo0S0lDQWdJQ0FnSUNB\nZ0lDQWcNClBDRXRMU0JEYjI1MFlXbHVaWElnTFMwK0NpQWdJQ0FnSUNBZ0lDQWdJRHgwWVdKc1pT\nQmliM0prWlhJOUlqQWlJR05sYkd4d1lXUmsNCmFXNW5QU0l3SWlCalpXeHNjM0JoWTJsdVp6MGlN\nQ0lnWTJ4aGMzTTlJbU52Ym5SaGFXNWxjaUlnYzNSNWJHVTlJbUp2Y21SbGNpMWoNCmIyeHNZWEJ6\nWlRvZ1kyOXNiR0Z3YzJVN0lHSnZjbVJsY2kxemNHRmphVzVuT2lBd095QndZV1JrYVc1bk9pQXdP\neUIyWlhKMGFXTmgNCmJDMWhiR2xuYmpvZ2RHOXdPeUJ0YzI4dGRHRmliR1V0YkhOd1lXTmxPaUF3\nY0hRN0lHMXpieTEwWVdKc1pTMXljM0JoWTJVNklEQncNCmREc2dMVzF6TFhSbGVIUXRjMmw2WlMx\naFpHcDFjM1E2SURFd01DVTdJQzEzWldKcmFYUXRkR1Y0ZEMxemFYcGxMV0ZrYW5WemREb2cNCk1U\nQXdKVHNnZDJsa2RHZzZJRFl3TUhCNE95QnRZWEpuYVc0NklEQWdZWFYwYnlBek1IQjRJR0YxZEc4\nN0lFMWhjbWRwYmpvZ01DQmgNCmRYUnZJRE13Y0hnZ1lYVjBienNnZEdWNGRDMWhiR2xuYmpvZ2FX\nNW9aWEpwZERzaVBnb2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BDRXQNCkxTQklaV0ZrWlhJZ0xTMCtD\naUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQThkSElnYzNSNWJHVTlJbkJoWkdScGJtYzZJREE3SUhabGNu\nUnANClkyRnNMV0ZzYVdkdU9pQjBiM0E3SUhSbGVIUXRZV3hwWjI0NklHeGxablE3SWo0S0lDQWdJ\nQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTgNCmRHUWdZV3hwWjI0OUltTmxiblJsY2lJZ2RtRnNhV2R1\nUFNKdGFXUmtiR1VpSUdOc1lYTnpQU0pvWldGa1pYSWlJSE4wZVd4bFBTSjMNCmIzSmtMWGR5WVhB\nNklHSnlaV0ZyTFhkdmNtUTdJQzEzWldKcmFYUXRhSGx3YUdWdWN6b2dZWFYwYnpzZ0xXMXZlaTFv\nZVhCb1pXNXoNCk9pQmhkWFJ2T3lCb2VYQm9aVzV6T2lCaGRYUnZPeUJpYjNKa1pYSXRZMjlzYkdG\nd2MyVTZJR052Ykd4aGNITmxJQ0ZwYlhCdmNuUmgNCmJuUTdJSFpsY25ScFkyRnNMV0ZzYVdkdU9p\nQjBiM0E3SUcxemJ5MTBZV0pzWlMxc2MzQmhZMlU2SURCd2REc2diWE52TFhSaFlteGwNCkxYSnpj\nR0ZqWlRvZ01IQjBPeUF0YlhNdGRHVjRkQzF6YVhwbExXRmthblZ6ZERvZ01UQXdKVHNnTFhkbFlt\ndHBkQzEwWlhoMExYTnANCmVtVXRZV1JxZFhOME9pQXhNREFsT3lCamIyeHZjam9nSXpRME5Ec2da\nbTl1ZEMxbVlXMXBiSGs2SUNkSVpXeDJaWFJwWTJFZ1RtVjENClpTY3NTR1ZzZG1WMGFXTmhMRUZ5\nYVdGc0xITmhibk10YzJWeWFXWTdJR1p2Ym5RdGQyVnBaMmgwT2lCdWIzSnRZV3c3SUcxaGNtZHAN\nCmJqb2dNRHNnVFdGeVoybHVPaUF3T3lCbWIyNTBMWE5wZW1VNklERTBjSGc3SUcxemJ5MXNhVzVs\nTFdobGFXZG9kQzF5ZFd4bE9pQmwNCmVHRmpkR3g1T3lCc2FXNWxMV2hsYVdkb2REb2dNVFF3SlRz\nZ2RHVjRkQzFoYkdsbmJqb2dZMlZ1ZEdWeU95QndZV1JrYVc1bk9pQXoNCk1IQjRJRE13Y0hnZ01q\nSndlQ0F6TUhCNE95SStDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEeHBiV2NnYzNK\nalBTSm8NCmRIUndjem92TDNkdmNtUndjbVZ6YzNCc2RXZHBibk11YVc1bWJ5OTNjQzFqYjI1MFpX\nNTBMM0JzZFdkcGJuTXZabXgxWlc1MExYTnQNCmRIQXZZWE56WlhSekwybHRZV2RsY3k5bWJIVmxi\nblJ6YlhSd0xuQnVaeUlnZDJsa2RHZzlJakUyTkhCNElpQmhiSFE5SWtac2RXVnUNCmRDQlRUVlJR\nSUV4dloyOGlJSE4wZVd4bFBTSnZkWFJzYVc1bE9pQnViMjVsT3lCMFpYaDBMV1JsWTI5eVlYUnBi\nMjQ2SUc1dmJtVTcNCklHMWhlQzEzYVdSMGFEb2dNVEF3SlRzZ1kyeGxZWEk2SUdKdmRHZzdJQzF0\nY3kxcGJuUmxjbkJ2YkdGMGFXOXVMVzF2WkdVNklHSnANClkzVmlhV003SUdScGMzQnNZWGs2SUds\ndWJHbHVaUzFpYkc5amF5QWhhVzF3YjNKMFlXNTBPeUIzYVdSMGFEb2dNVFkwY0hnN0lqNEsNCklD\nQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQThMM1JrUGdvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUEM5\nMGNqNEtJQ0FnSUNBZ0lDQWcNCklDQWdJQ0FnSUR3aExTMGdRMjl1ZEdWdWRDQXRMVDRLSUNBZ0lD\nQWdJQ0FnSUNBZ0lDQWdJRHgwY2lCemRIbHNaVDBpY0dGa1pHbHUNClp6b2dNRHNnZG1WeWRHbGpZ\nV3d0WVd4cFoyNDZJSFJ2Y0RzZ2RHVjRkQzFoYkdsbmJqb2diR1ZtZERzaVBnb2dJQ0FnSUNBZ0lD\nQWcNCklDQWdJQ0FnSUNBZ0lEeDBaQ0JoYkdsbmJqMGliR1ZtZENJZ2RtRnNhV2R1UFNKMGIzQWlJ\nR05zWVhOelBTSmpiMjUwWlc1MElpQnoNCmRIbHNaVDBpZDI5eVpDMTNjbUZ3T2lCaWNtVmhheTEz\nYjNKa095QXRkMlZpYTJsMExXaDVjR2hsYm5NNklHRjFkRzg3SUMxdGIzb3QNCmFIbHdhR1Z1Y3pv\nZ1lYVjBienNnYUhsd2FHVnVjem9nWVhWMGJ6c2dZbTl5WkdWeUxXTnZiR3hoY0hObE9pQmpiMnhz\nWVhCelpTQWgNCmFXMXdiM0owWVc1ME95QjJaWEowYVdOaGJDMWhiR2xuYmpvZ2RHOXdPeUJ0YzI4\ndGRHRmliR1V0YkhOd1lXTmxPaUF3Y0hRN0lHMXoNCmJ5MTBZV0pzWlMxeWMzQmhZMlU2SURCd2RE\nc2dMVzF6TFhSbGVIUXRjMmw2WlMxaFpHcDFjM1E2SURFd01DVTdJQzEzWldKcmFYUXQNCmRHVjRk\nQzF6YVhwbExXRmthblZ6ZERvZ01UQXdKVHNnWTI5c2IzSTZJQ00wTkRRN0lHWnZiblF0Wm1GdGFX\neDVPaUFuU0dWc2RtVjANCmFXTmhJRTVsZFdVbkxFaGxiSFpsZEdsallTeEJjbWxoYkN4ellXNXpM\nWE5sY21sbU95Qm1iMjUwTFhkbGFXZG9kRG9nYm05eWJXRnMNCk95QnRZWEpuYVc0NklEQTdJRTFo\nY21kcGJqb2dNRHNnZEdWNGRDMWhiR2xuYmpvZ2JHVm1kRHNnWm05dWRDMXphWHBsT2lBeE5IQjQN\nCk95QnRjMjh0YkdsdVpTMW9aV2xuYUhRdGNuVnNaVG9nWlhoaFkzUnNlVHNnYkdsdVpTMW9aV2xu\nYUhRNklERTBNQ1U3SUdKaFkydG4NCmNtOTFibVF0WTI5c2IzSTZJQ05tWm1abVptWTdJSEJoWkdS\ncGJtYzZJRFl3Y0hnZ056VndlQ0EwTlhCNElEYzFjSGc3SUdKdmNtUmwNCmNpMXlhV2RvZERvZ01Y\nQjRJSE52Ykdsa0lDTmtaR1E3SUdKdmNtUmxjaTFpYjNSMGIyMDZJREZ3ZUNCemIyeHBaQ0FqWkdS\na095QmkNCmIzSmtaWEl0YkdWbWREb2dNWEI0SUhOdmJHbGtJQ05rWkdRN0lHSnZjbVJsY2kxMGIz\nQTZJRFJ3ZUNCemIyeHBaQ0FqWXpjeE5tTXgNCk95SStDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ\nQ0FnSUNBZ0lEeGthWFlnWTJ4aGMzTTlJbk4xWTJObGMzTWlJSE4wZVd4bFBTSjANClpYaDBMV0Zz\nYVdkdU9pQmpaVzUwWlhJN0lqNEtJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ\nRHh3SUdOc1lYTnoNClBTSjBaWGgwTFdWNGRISmhMV3hoY21kbElIUmxlSFF0WTJWdWRHVnlJR052\nYm1keVlYUnpJaUJ6ZEhsc1pUMGlMVzF6TFhSbGVIUXQNCmMybDZaUzFoWkdwMWMzUTZJREV3TUNV\nN0lDMTNaV0pyYVhRdGRHVjRkQzF6YVhwbExXRmthblZ6ZERvZ01UQXdKVHNnWTI5c2IzSTYNCklD\nTTBORFE3SUdadmJuUXRabUZ0YVd4NU9pQW5TR1ZzZG1WMGFXTmhJRTVsZFdVbkxFaGxiSFpsZEds\nallTeEJjbWxoYkN4ellXNXoNCkxYTmxjbWxtT3lCbWIyNTBMWGRsYVdkb2REb2dibTl5YldGc095\nQndZV1JrYVc1bk9pQXdPeUJ0YzI4dGJHbHVaUzFvWldsbmFIUXQNCmNuVnNaVG9nWlhoaFkzUnNl\nVHNnYkdsdVpTMW9aV2xuYUhRNklERTBNQ1U3SUdadmJuUXRjMmw2WlRvZ01qQndlRHNnZEdWNGRD\nMWgNCmJHbG5iam9nWTJWdWRHVnlPeUJ0WVhKbmFXNDZJREFnTUNBeU1IQjRJREE3SUUxaGNtZHBi\nam9nTUNBd0lESXdjSGdnTURzaVBnb2cNCklDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn\nSUNBZ0lDQWdJRU52Ym1keVlYUnpMQ0IwWlhOMElHVnRZV2xzSUhkaGN5QnoNClpXNTBJSE4xWTJO\nbGMzTm1kV3hzZVNFZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BDOXdQZ29n\nSUNBZ0lDQWcNCklDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQSEFnWTJ4aGMzTTlJblJsZUhR\ndGJHRnlaMlVpSUhOMGVXeGxQU0l0YlhNdGRHVjQNCmRDMXphWHBsTFdGa2FuVnpkRG9nTVRBd0pU\nc2dMWGRsWW10cGRDMTBaWGgwTFhOcGVtVXRZV1JxZFhOME9pQXhNREFsT3lCamIyeHYNCmNqb2dJ\nelEwTkRzZ1ptOXVkQzFtWVcxcGJIazZJQ2RJWld4MlpYUnBZMkVnVG1WMVpTY3NTR1ZzZG1WMGFX\nTmhMRUZ5YVdGc0xITmgNCmJuTXRjMlZ5YVdZN0lHWnZiblF0ZDJWcFoyaDBPaUJ1YjNKdFlXdzdJ\nSEJoWkdScGJtYzZJREE3SUhSbGVIUXRZV3hwWjI0NklHeGwNClpuUTdJRzF6Ynkxc2FXNWxMV2hs\nYVdkb2RDMXlkV3hsT2lCbGVHRmpkR3g1T3lCc2FXNWxMV2hsYVdkb2REb2dNVFF3SlRzZ2JXRnkN\nCloybHVPaUF3SURBZ01UVndlQ0F3T3lCTllYSm5hVzQ2SURBZ01DQXhOWEI0SURBN0lHWnZiblF0\nYzJsNlpUb2dNVFp3ZURzaVBnb2cNCklDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB\nZ0lDQWdJRlJvWVc1cklIbHZkU0JtYjNJZ2RYTnBibWNnUm14MVpXNTANCklGTk5WRkFnVUd4MVoy\nbHVMaUJVYUdVZ2RXeDBhVzFoZEdVZ1UwMVVVQ0J3YkhWbmFXNGdlVzkxSUc1bFpXUWdabTl5SUcx\naGEybHUNClp5QnpkWEpsSUhsdmRYSWdaVzFoYVd4eklHRnlaU0JrWld4cGRtVnlaV1F1UEdKeUlD\nOCtQR0p5SUM4K1JteDFaVzUwVTAxVVVDQnANCmN5QmhJR1p5WldVZ2IzQmxibk52ZFhKalpTQndi\nSFZuYVc0Z1lXNWtJR2wwSUhkcGJHd2dZbVVnWVd4M1lYbHpJR1p5WldVZ0tEeGgNCklHaHlaV1k5\nSW1oMGRIQnpPaTh2Wm14MVpXNTBjMjEwY0M1amIyMHZkMmg1TFhkbExXSjFhV3gwTFdac2RXVnVk\nSE50ZEhBdGNHeDENCloybHVMeUkrVEdWaGNtNGdkMmg1SUdsMEppTXdNems3Y3lCbWNtVmxQQzlo\nUGlrdUNpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWcNCklDQWdJQ0FnSUNBOEwzQStDZ29nSUNB\nZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUEhBZ1kyeGhjM005SW5OcFoyNWgNCmRI\nVnlaU0lnYzNSNWJHVTlJaTF0Y3kxMFpYaDBMWE5wZW1VdFlXUnFkWE4wT2lBeE1EQWxPeUF0ZDJW\naWEybDBMWFJsZUhRdGMybDYNClpTMWhaR3AxYzNRNklERXdNQ1U3SUdOdmJHOXlPaUFqTkRRME95\nQm1iMjUwTFdaaGJXbHNlVG9nSjBobGJIWmxkR2xqWVNCT1pYVmwNCkp5eElaV3gyWlhScFkyRXNR\nWEpwWVd3c2MyRnVjeTF6WlhKcFpqc2dabTl1ZEMxM1pXbG5hSFE2SUc1dmNtMWhiRHNnY0dGa1pH\nbHUNClp6b2dNRHNnWm05dWRDMXphWHBsT2lBeE5IQjRPeUJ0YzI4dGJHbHVaUzFvWldsbmFIUXRj\nblZzWlRvZ1pYaGhZM1JzZVRzZ2JHbHUNClpTMW9aV2xuYUhRNklERTBNQ1U3SUhSbGVIUXRZV3hw\nWjI0NklHeGxablE3SUcxaGNtZHBiam9nTWpCd2VDQXdJREFnTURzZ1RXRnkNCloybHVPaUF5TUhC\nNElEQWdNQ0F3T3lJK0NpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn\nUEdsdFp5QnoNCmNtTTlJbWgwZEhCek9pOHZkMjl5WkhCeVpYTnpjR3gxWjJsdWN5NXBibVp2TDNk\nd0xXTnZiblJsYm5RdmNHeDFaMmx1Y3k5bWJIVmwNCmJuUXRjMjEwY0M5aGMzTmxkSE12YVcxaFoy\nVnpMMjFoYVd4ZmMybG5ibUYwZFhKbExuQnVaeUlnZDJsa2RHZzlJakkxTUNJZ1lXeDANClBTSkdi\nSFZsYm5RZ1UwMVVVQ0JNYjJkdklpQnpkSGxzWlQwaWIzVjBiR2x1WlRvZ2JtOXVaVHNnZEdWNGRD\nMWtaV052Y21GMGFXOXUNCk9pQnViMjVsT3lCdFlYZ3RkMmxrZEdnNklERXdNQ1U3SUdOc1pXRnlP\naUJpYjNSb095QXRiWE10YVc1MFpYSndiMnhoZEdsdmJpMXQNCmIyUmxPaUJpYVdOMVltbGpPeUJr\nYVhOd2JHRjVPaUJwYm14cGJtVXRZbXh2WTJzZ0lXbHRjRzl5ZEdGdWREc2dkMmxrZEdnNklERTEN\nCk1IQjRPeUkrQ2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOEwzQStDaUFn\nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWcNCklDQWdJQ0FnSUNBZ0lDQThjQ0J6ZEhsc1pUMGlMVzF6TFhS\nbGVIUXRjMmw2WlMxaFpHcDFjM1E2SURFd01DVTdJQzEzWldKcmFYUXQNCmRHVjRkQzF6YVhwbExX\nRmthblZ6ZERvZ01UQXdKVHNnWTI5c2IzSTZJQ00wTkRRN0lHWnZiblF0Wm1GdGFXeDVPaUFuU0dW\nc2RtVjANCmFXTmhJRTVsZFdVbkxFaGxiSFpsZEdsallTeEJjbWxoYkN4ellXNXpMWE5sY21sbU95\nQm1iMjUwTFhkbGFXZG9kRG9nYm05eWJXRnMNCk95QndZV1JrYVc1bk9pQXdPeUIwWlhoMExXRnNh\nV2R1T2lCc1pXWjBPeUJtYjI1MExYTnBlbVU2SURFMGNIZzdJRzF6Ynkxc2FXNWwNCkxXaGxhV2Rv\nZEMxeWRXeGxPaUJsZUdGamRHeDVPeUJzYVc1bExXaGxhV2RvZERvZ01UUXdKVHNnYldGeVoybHVP\naUF3SURBZ01UVncNCmVDQXdPeUJOWVhKbmFXNDZJREFnTUNBeE5YQjRJREE3SWo0S0lDQWdJQ0Fn\nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWcNCklDQlRhR0ZvYW1Gb1lXNGdTbVYzWld3\nOFluSStDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1EwVlANCkxD\nQlhVRTFoYm1GblpVNXBibXBoSUV4TVF3b2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB\nZ0lDQWdQQzl3UGdvS0lDQWcNCklDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUR4d0lI\nTjBlV3hsUFNJdGJYTXRkR1Y0ZEMxemFYcGxMV0ZrYW5WemREb2cNCk1UQXdKVHNnTFhkbFltdHBk\nQzEwWlhoMExYTnBlbVV0WVdScWRYTjBPaUF4TURBbE95QmpiMnh2Y2pvZ0l6UTBORHNnWm05dWRD\nMW0NCllXMXBiSGs2SUNkSVpXeDJaWFJwWTJFZ1RtVjFaU2NzU0dWc2RtVjBhV05oTEVGeWFXRnNM\nSE5oYm5NdGMyVnlhV1k3SUdadmJuUXQNCmQyVnBaMmgwT2lCdWIzSnRZV3c3SUhCaFpHUnBibWM2\nSURBN0lIUmxlSFF0WVd4cFoyNDZJR3hsWm5RN0lHWnZiblF0YzJsNlpUb2cNCk1UUndlRHNnYlhO\ndkxXeHBibVV0YUdWcFoyaDBMWEoxYkdVNklHVjRZV04wYkhrN0lHeHBibVV0YUdWcFoyaDBPaUF4\nTkRBbE95QnQNCllYSm5hVzQ2SURJd2NIZ2dNQ0F4TlhCNElEQTdJRTFoY21kcGJqb2dNakJ3ZUNB\nd0lERTFjSGdnTURzaVBnb2dJQ0FnSUNBZ0lDQWcNCklDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD\nQWdJRlJvYVhNZ1pXMWhhV3dnZDJGeklITmxiblFnWm5KdmJTQThZajVYVUNCUWJIVm4NCmFXNXpJ\nR0YwSURJd01qVXRNVEF0TVRnZ01USTZNalE2TVRJOEwySStDaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lD\nQWdJQ0FnSUNBZ0lDQWcNCklDQThMM0ErQ2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ\nRHd2WkdsMlBnb2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWcNCklEd3ZkR1ErQ2lBZ0lDQWdJQ0Fn\nSUNBZ0lDQWdJQ0E4TDNSeVBnb2dJQ0FnSUNBZ0lDQWdJQ0E4TDNSaFlteGxQZ29nSUNBZ0lDQWcN\nCklEd3ZkR1ErQ2lBZ0lDQThMM1J5UGdvZ0lDQWdQSFJ5UGdvZ0lDQWdJQ0FnSUR4MFpENEtJQ0Fn\nSUNBZ0lDQWdJQ0FnUEhBZ2MzUjUNCmJHVTlJaTF0Y3kxMFpYaDBMWE5wZW1VdFlXUnFkWE4wT2lB\neE1EQWxPeUF0ZDJWaWEybDBMWFJsZUhRdGMybDZaUzFoWkdwMWMzUTYNCklERXdNQ1U3SUdOdmJH\nOXlPaUFqTkRRME95Qm1iMjUwTFdaaGJXbHNlVG9nSjBobGJIWmxkR2xqWVNCT1pYVmxKeXhJWld4\nMlpYUnANClkyRXNRWEpwWVd3c2MyRnVjeTF6WlhKcFpqc2dabTl1ZEMxM1pXbG5hSFE2SUc1dmNt\nMWhiRHNnY0dGa1pHbHVaem9nTURzZ2RHVjQNCmRDMWhiR2xuYmpvZ1kyVnVkR1Z5T3lCbWIyNTBM\nWE5wZW1VNklERTBjSGc3SUcxemJ5MXNhVzVsTFdobGFXZG9kQzF5ZFd4bE9pQmwNCmVHRmpkR3g1\nT3lCc2FXNWxMV2hsYVdkb2REb2dNVFF3SlRzZ2JXRnlaMmx1T2lBd0lEQWdNVFZ3ZUNBd095QnRZ\nWEpuYVc0NklEQWcNCk1DQXhOWEI0SURBN0lqNEtJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lGQlRPaUJw\nWmlCNWIzVWdhR0YyWlNCaElHMXBiblYwWlNCd2JHVmgNCmMyVWdQR0VnYUhKbFpqMGlhSFIwY0hN\nNkx5OTNiM0prY0hKbGMzTXViM0puTDNOMWNIQnZjblF2Y0d4MVoybHVMMlpzZFdWdWRDMXoNCmJY\nUndMM0psZG1sbGQzTXZQMlpwYkhSbGNqMDFJajUzY21sMFpTQmhJSEpsZG1sbGR5Qm1iM0lnUm14\nMVpXNTBVMDFVVUR3dllUNEsNCklDQWdJQ0FnSUNBZ0lDQWdQQzl3UGdvZ0lDQWdJQ0FnSUR3dmRH\nUStDaUFnSUNBOEwzUnlQZ284TDNSaFlteGxQZ284TDJKdlpIaysNCkNqd3ZhSFJ0YkQ0Sw0K\n",
+        "extra": {
+            "function": "sendMime",
+            "mime_size": 16012
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "INFO",
+    "message": "API RESPONSE: 401 https:\/\/graph.microsoft.com\/v1.0\/me\/sendMail",
+    "data": {
+        "headers": {
+            "content-type": "application\/json",
+            "content-encoding": "gzip",
+            "vary": "Accept-Encoding",
+            "strict-transport-security": "max-age=31536000",
+            "request-id": "9af6a5b8-9989-42b6-b166-529a650fbc29",
+            "client-request-id": "9af6a5b8-9989-42b6-b166-529a650fbc29",
+            "x-ms-ags-diagnostic": "{\"ServerInfo\":{\"DataCenter\":\"Southeast Asia\",\"Slice\":\"E\",\"Ring\":\"5\",\"ScaleUnit\":\"002\",\"RoleInstance\":\"SG1PEPF00004F1C\"}}",
+            "www-authenticate": [
+                "Bearer realm=\"\", authorization_uri=\"https:\/\/login.microsoftonline.com\/common\/oauth2\/authorize\", client_id=\"00000003-0000-0000-c000-000000000000\"",
+                "PoP realm=\"\", authorization_uri=\"https:\/\/login.microsoftonline.com\/common\/oauth2\/authorize\", client_id=\"00000003-0000-0000-c000-000000000000\", nonce=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IkEzNjUwRDE4QTMwQjJDQUI3ODZFQ0JFNzgyRDY5RTg4MEQwNkVBNkYifQ.eyJ0cyI6MTc2MDc5MDI0MH0.FwxYgJALaPmKMMPYn60Z8mSNQL3wuISTDHOtH0iSpGkqvKZCo6dKGNB7X1ImamKgbTyzV11ztI5ZmIqgcIUMcO5mOvlcJAlu8NUkD7NDOtDOvCv5WOdBCYaNsvozAC9hd3vaIGh4JqkX3T_pC7tHe-RO2EsoPlRw5qx7_p6nx0_0AD4kdl4ZjGKPbO-cAcQRqDvzohUKsb8HxjbtMtofxKo2T5ZUxIaSIkiBUZWKYIGvaNIwpcbpAK0lvo4CHrbbSVZ9qGBlCz1qyFDEA-pfdcbDHjSy4NpaKaF5OeO_VsyuF8PC7tVTjb7Yg_cL4fdxslQ1zhxoj-oMPMA_P4m2iw\""
+            ],
+            "date": "Sat, 18 Oct 2025 12:24:13 GMT"
+        },
+        "body": "{\"error\":{\"code\":\"InvalidAuthenticationToken\",\"message\":\"ArgumentNull\",\"innerError\":{\"date\":\"2025-10-18T12:24:13\",\"request-id\":\"9af6a5b8-9989-42b6-b166-529a650fbc29\",\"client-request-id\":\"9af6a5b8-9989-42b6-b166-529a650fbc29\"}}}",
+        "extra": {
+            "function": "sendMime"
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "ERROR",
+    "message": "ERROR in FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::sendMime: API Error Response",
+    "data": {
+        "response_code": 401,
+        "error_message": "Unauthorized",
+        "response_body": "{\"error\":{\"code\":\"InvalidAuthenticationToken\",\"message\":\"ArgumentNull\",\"innerError\":{\"date\":\"2025-10-18T12:24:13\",\"request-id\":\"9af6a5b8-9989-42b6-b166-529a650fbc29\",\"client-request-id\":\"9af6a5b8-9989-42b6-b166-529a650fbc29\"}}}",
+        "wp_error": {
+            "errors": {
+                "401": [
+                    "Unauthorized"
+                ]
+            },
+            "error_data": []
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "DEBUG",
+    "message": "EXIT: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\API::sendMime (Execution time: 0.2991s)",
+    "data": {
+        "return_value": {
+            "errors": {
+                "401": [
+                    "Unauthorized"
+                ]
+            },
+            "error_data": []
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "ERROR",
+    "message": "ERROR in FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::sendViaApi: API returned WP_Error",
+    "data": {
+        "error_message": "Unauthorized",
+        "error_code": 401,
+        "error_data": null
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "DEBUG",
+    "message": "EXIT: FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::sendViaApi (Execution time: 0.8635s)",
+    "data": {
+        "return_value": {
+            "errors": {
+                "422": [
+                    "Unauthorized"
+                ]
+            },
+            "error_data": []
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "INFO",
+    "message": "EMAIL OPERATION: post_send_success",
+    "data": {
+        "response": {
+            "errors": {
+                "422": [
+                    "Unauthorized"
+                ]
+            },
+            "error_data": []
+        }
+    }
+}
+{
+    "timestamp": "2025-10-18 12:24:13",
+    "level": "ERROR",
+    "message": "ERROR in FluentMail\\App\\Services\\Mailer\\Providers\\Outlook\\Handler::send: Unauthorized",
+    "data": {
+        "exception": {}
+    }
+}

@@ -157,8 +157,7 @@ class SchedulerHandler {
         return untrailingslashit($url);
     }
 
-    public function maybeHandleFallbackConnection($status, $logId, $handler, $data = [])
-    {
+    public function maybeHandleFallbackConnection($status, $logId, $handler, $data = []) {
         if (defined('FLUENTMAIL_EMAIL_TESTING')) {
             return false;
         }
@@ -170,8 +169,8 @@ class SchedulerHandler {
         if (!$fallbackConnectionId) {
             // Log that fallback was attempted but no fallback connection is configured
             $this->logFallbackActivation($logId, 'no_fallback_configured', [
-                'reason' => 'No fallback connection configured in settings',
-                'primary_provider' => $handler ? get_class($handler) : 'unknown',
+                'reason'             => 'No fallback connection configured in settings',
+                'primary_provider'   => $handler ? get_class($handler) : 'unknown',
                 'primary_error_data' => $data
             ]);
             do_action('fluentmail_email_sending_failed_no_fallback', $logId, $handler, $data);
@@ -183,10 +182,10 @@ class SchedulerHandler {
         if (!$fallbackConnection) {
             // Log that fallback connection was not found
             $this->logFallbackActivation($logId, 'fallback_connection_not_found', [
-                'reason' => 'Configured fallback connection not found',
+                'reason'                 => 'Configured fallback connection not found',
                 'fallback_connection_id' => $fallbackConnectionId,
-                'primary_provider' => $handler ? get_class($handler) : 'unknown',
-                'primary_error_data' => $data
+                'primary_provider'       => $handler ? get_class($handler) : 'unknown',
+                'primary_error_data'     => $data
             ]);
             do_action('fluentmail_email_sending_failed_no_fallback', $logId, $handler, $data);
             return false;
@@ -194,12 +193,12 @@ class SchedulerHandler {
 
         // Log successful fallback activation
         $this->logFallbackActivation($logId, 'fallback_activated', [
-            'reason' => 'Primary connection failed, activating configured fallback',
+            'reason'                 => 'Primary connection failed, activating configured fallback',
             'fallback_connection_id' => $fallbackConnectionId,
-            'fallback_provider' => $fallbackConnection['provider_settings']['provider'] ?? 'unknown',
-            'primary_provider' => $handler ? get_class($handler) : 'unknown',
-            'primary_error_data' => $data,
-            'fallback_settings' => $fallbackConnection['provider_settings']
+            'fallback_provider'      => $fallbackConnection['provider_settings']['provider'] ?? 'unknown',
+            'primary_provider'       => $handler ? get_class($handler) : 'unknown',
+            'primary_error_data'     => $data,
+            'fallback_settings'      => $fallbackConnection['provider_settings']
         ]);
 
         $phpMailer = $handler->getPhpMailer();
@@ -212,17 +211,16 @@ class SchedulerHandler {
         return $phpMailer->sendViaFallback($logId);
     }
 
-    private function logFallbackActivation($logId, $eventType, $details = [])
-    {
+    private function logFallbackActivation($logId, $eventType, $details = []) {
         $uploadDir = wp_upload_dir();
-        $logFile = $uploadDir['basedir'] . '/fallback-activation-debug.log';
+        $logFile   = $uploadDir['basedir'] . '/fallback-activation-debug.log';
 
         $logEntry = [
-            'level' => 'INFO',
-            'event' => 'FALLBACK_' . strtoupper($eventType),
-            'log_id' => $logId,
+            'level'     => 'INFO',
+            'event'     => 'FALLBACK_' . strtoupper($eventType),
+            'log_id'    => $logId,
             'timestamp' => gmdate('Y-m-d H:i:s'),
-            'details' => $details
+            'details'   => $details
         ];
 
         $jsonEntry = wp_json_encode($logEntry, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);

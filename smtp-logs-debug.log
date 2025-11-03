@@ -1,0 +1,24 @@
+{
+    "timestamp": "2025-11-03 18:20:07",
+    "level": "DEBUG",
+    "message": "SMTP DEBUG: SMTP ERROR: Failed to connect to server: Operation timed out (60)",
+    "data": []
+}
+{
+    "timestamp": "2025-11-03 18:20:07",
+    "level": "DEBUG",
+    "message": "SMTP DEBUG: SMTP Error: Could not connect to SMTP host. Failed to connect to server",
+    "data": []
+}
+{
+    "timestamp": "2025-11-03 18:20:07",
+    "level": "ERROR",
+    "message": "ERROR in FluentMail\\App\\Services\\Mailer\\Providers\\Smtp\\Handler::postSend: SMTP Error: Could not connect to SMTP host. Failed to connect to server",
+    "data": {
+        "exception": {},
+        "smtp_debug_output": [
+            "SMTP ERROR: Failed to connect to server: Operation timed out (60)",
+            "SMTP Error: Could not connect to SMTP host. Failed to connect to server"
+        ]
+    }
+}

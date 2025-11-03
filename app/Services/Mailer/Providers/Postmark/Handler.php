@@ -31,9 +31,21 @@ class Handler extends BaseHandler {
 
     public function send() {
         $startTime = microtime(true);
-        $this->log('logFunctionEntry', __CLASS__, __FUNCTION__);
+        $this->log('logFunctionEntry', __CLASS__, __FUNCTION__, [
+            'existing_row_id' => $this->existing_row_id,
+            'is_fallback' => !empty($this->existing_row_id)
+        ]);
 
-        if ($this->preSend() && $this->phpMailer->preSend()) {
+        // Log fallback activation if this is a fallback attempt
+        if (!empty($this->existing_row_id)) {
+            $this->log('logInfo', 'FALLBACK ACTIVATED - Postmark Provider', [
+                'existing_row_id' => $this->existing_row_id,
+                'reason' => 'Primary connection failed, using configured fallback Postmark connection',
+                'fallback_settings' => $this->settings
+            ]);
+        }
+
+        if ($this->preSend()) {
             $result = $this->postSend();
             $this->log('logFunctionExit', __CLASS__, __FUNCTION__, $result, microtime(true) - $startTime);
             return $result;
@@ -41,7 +53,8 @@ class Handler extends BaseHandler {
 
         $error = new \WP_Error(422, __('Something went wrong!', 'fluent-smtp'), []);
         $this->log('logError', __CLASS__, __FUNCTION__, 'Pre-send failed', [
-            'wp_error' => $error
+            'wp_error' => $error,
+            'is_fallback' => !empty($this->existing_row_id)
         ]);
         $this->log('logFunctionExit', __CLASS__, __FUNCTION__, $error, microtime(true) - $startTime);
         return $this->handleResponse($error);

@@ -33,6 +33,8 @@ class FluentPHPMailer
 
     public function sendViaFallback($rowId)
     {
+        // Deprecated: Fallback now uses dedicated Fallback provider
+        // This method is kept for backward compatibility but delegates to the new system
         $driver = fluentMailGetProvider($this->phpMailer->From);
         if($driver) {
             $driver->setRowId($rowId);
